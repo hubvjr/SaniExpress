@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>AddDriverServlet</servlet-name>
+        <servlet-class>com.sani.AddDriverServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteDriverServlet</servlet-name>
+        <servlet-class>com.sani.DeleteDriverServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminRefundServlet</servlet-name>
+        <servlet-class>AdminRefundServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DriverLeaveServlet</servlet-name>
+        <servlet-class>com.sani.DriverLeaveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditDriverServlet</servlet-name>
+        <servlet-class>com.sani.EditDriverServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditLeaveServlet</servlet-name>
+        <servlet-class>com.sani.EditLeaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDriverServlet</servlet-name>
+        <url-pattern>/AddDriverServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteDriverServlet</servlet-name>
+        <url-pattern>/DeleteDriverServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminRefundServlet</servlet-name>
+        <url-pattern>/AdminRefundServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DriverLeaveServlet</servlet-name>
+        <url-pattern>/DriverLeaveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDriverServlet</servlet-name>
+        <url-pattern>/EditDriverServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditLeaveServlet</servlet-name>
+        <url-pattern>/EditLeaveServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AddAdminServlet</servlet-name>
+    <servlet-class>com.sani.AddAdminServlet</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>EditAdminServlet</servlet-name>
+    <servlet-class>com.sani.EditAdminServlet</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>com.sani.DeleteAdminServlet</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>AddManagerServlet</servlet-name>
+    <servlet-class>com.sani.AddManagerServlet</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>EditManagerServlet</servlet-name>
+    <servlet-class>com.sani.EditManagerServlet</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>DeleteManagerServlet</servlet-name>
+    <servlet-class>com.sani.DeleteManagerServlet</servlet-class>
+</servlet>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
